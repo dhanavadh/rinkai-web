@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@import "@fontsource/ibm-plex-sans-thai/100.css";
+@import "@fontsource/ibm-plex-sans-thai/200.css";
+@import "@fontsource/ibm-plex-sans-thai/300.css";
+@import "@fontsource/ibm-plex-sans-thai/400.css";
+@import "@fontsource/ibm-plex-sans-thai/500.css";
+@import "@fontsource/ibm-plex-sans-thai/600.css";
+@import "@fontsource/ibm-plex-sans-thai/700.css";
+
+@layer theme {
+    :root,
+    :host {
+    --font-ibm-plex-sans-thai: "IBM Plex Sans Thai", sans-serif;
+    }
+}
+
+body {        
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+
+}
+
+@layer utilities {
+    .font-ibm-plex-sans-thai-custom {
+        font-family: var(--font-ibm-plex-sans-thai);
+    }    
+}
